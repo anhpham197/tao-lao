@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+#message {
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/hung.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+span {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
